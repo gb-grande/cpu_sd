@@ -1,0 +1,245 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clock_manual'
+Slack : -9.522
+TNS   : -194.540
+
+Type  : Slow 1100mV 85C Model Setup 'rst_key'
+Slack : -8.147
+TNS   : -164.515
+
+Type  : Slow 1100mV 85C Model Setup 'clock_real'
+Slack : -4.055
+TNS   : -59.448
+
+Type  : Slow 1100mV 85C Model Hold 'clock_real'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'rst_key'
+Slack : 0.718
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock_manual'
+Slack : 2.103
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'clock_manual'
+Slack : -6.218
+TNS   : -93.267
+
+Type  : Slow 1100mV 85C Model Recovery 'rst_key'
+Slack : -4.843
+TNS   : -71.267
+
+Type  : Slow 1100mV 85C Model Recovery 'clock_real'
+Slack : -2.527
+TNS   : -45.369
+
+Type  : Slow 1100mV 85C Model Removal 'rst_key'
+Slack : 0.601
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'clock_real'
+Slack : 1.267
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'clock_manual'
+Slack : 1.986
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'rst_key'
+Slack : -2.636
+TNS   : -60.866
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_manual'
+Slack : -2.636
+TNS   : -57.445
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_real'
+Slack : -0.538
+TNS   : -14.049
+
+Type  : Slow 1100mV 0C Model Setup 'clock_manual'
+Slack : -9.719
+TNS   : -196.607
+
+Type  : Slow 1100mV 0C Model Setup 'rst_key'
+Slack : -8.374
+TNS   : -166.756
+
+Type  : Slow 1100mV 0C Model Setup 'clock_real'
+Slack : -3.864
+TNS   : -54.768
+
+Type  : Slow 1100mV 0C Model Hold 'clock_real'
+Slack : 0.437
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'rst_key'
+Slack : 0.773
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock_manual'
+Slack : 2.128
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'clock_manual'
+Slack : -6.448
+TNS   : -96.226
+
+Type  : Slow 1100mV 0C Model Recovery 'rst_key'
+Slack : -5.103
+TNS   : -74.706
+
+Type  : Slow 1100mV 0C Model Recovery 'clock_real'
+Slack : -2.254
+TNS   : -40.333
+
+Type  : Slow 1100mV 0C Model Removal 'rst_key'
+Slack : 0.714
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'clock_real'
+Slack : 0.951
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'clock_manual'
+Slack : 2.069
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'rst_key'
+Slack : -2.636
+TNS   : -63.015
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_manual'
+Slack : -2.636
+TNS   : -58.649
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_real'
+Slack : -0.538
+TNS   : -14.110
+
+Type  : Fast 1100mV 85C Model Setup 'clock_manual'
+Slack : -5.317
+TNS   : -108.458
+
+Type  : Fast 1100mV 85C Model Setup 'rst_key'
+Slack : -4.624
+TNS   : -93.286
+
+Type  : Fast 1100mV 85C Model Setup 'clock_real'
+Slack : -2.332
+TNS   : -33.078
+
+Type  : Fast 1100mV 85C Model Hold 'clock_real'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'rst_key'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock_manual'
+Slack : 1.228
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'clock_manual'
+Slack : -3.541
+TNS   : -54.584
+
+Type  : Fast 1100mV 85C Model Recovery 'rst_key'
+Slack : -2.848
+TNS   : -43.496
+
+Type  : Fast 1100mV 85C Model Recovery 'clock_real'
+Slack : -1.556
+TNS   : -27.695
+
+Type  : Fast 1100mV 85C Model Removal 'clock_real'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'rst_key'
+Slack : 0.861
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'clock_manual'
+Slack : 1.564
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'rst_key'
+Slack : -2.174
+TNS   : -51.340
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_manual'
+Slack : -2.174
+TNS   : -46.213
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_real'
+Slack : -0.096
+TNS   : -1.718
+
+Type  : Fast 1100mV 0C Model Setup 'clock_manual'
+Slack : -4.957
+TNS   : -99.423
+
+Type  : Fast 1100mV 0C Model Setup 'rst_key'
+Slack : -4.339
+TNS   : -85.829
+
+Type  : Fast 1100mV 0C Model Setup 'clock_real'
+Slack : -2.062
+TNS   : -28.842
+
+Type  : Fast 1100mV 0C Model Hold 'clock_real'
+Slack : -0.026
+TNS   : -0.050
+
+Type  : Fast 1100mV 0C Model Hold 'rst_key'
+Slack : 0.249
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock_manual'
+Slack : 1.025
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'clock_manual'
+Slack : -3.370
+TNS   : -51.704
+
+Type  : Fast 1100mV 0C Model Recovery 'rst_key'
+Slack : -2.752
+TNS   : -41.816
+
+Type  : Fast 1100mV 0C Model Recovery 'clock_real'
+Slack : -1.325
+TNS   : -23.545
+
+Type  : Fast 1100mV 0C Model Removal 'clock_real'
+Slack : 0.273
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'rst_key'
+Slack : 0.909
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'clock_manual'
+Slack : 1.537
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'rst_key'
+Slack : -2.174
+TNS   : -49.407
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_manual'
+Slack : -2.174
+TNS   : -44.461
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_real'
+Slack : -0.097
+TNS   : -1.722
+
+------------------------------------------------------------
