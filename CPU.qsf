@@ -19,7 +19,7 @@
 #
 # Quartus Prime
 # Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-# Date created = 15:48:36  September 22, 2022
+# Date created = 13:14:33  October 20, 2022
 #
 # -------------------------------------------------------------------------- #
 #
@@ -41,7 +41,7 @@ set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CEBA4F23C7
 set_global_assignment -name TOP_LEVEL_ENTITY CPU
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:48:36  SEPTEMBER 22, 2022"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:14:33  OCTOBER 20, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "21.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
@@ -54,21 +54,49 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
-set_global_assignment -name QIP_FILE rom.qip
+set_global_assignment -name BDF_FILE CPU.bdf
+set_global_assignment -name BDF_FILE double.bdf
+set_global_assignment -name BDF_FILE half.bdf
+set_global_assignment -name BDF_FILE display4bits.bdf
+set_global_assignment -name BDF_FILE somaSubParcial.bdf
+set_global_assignment -name BDF_FILE Count8.bdf
+set_global_assignment -name BDF_FILE UDC.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name BDF_FILE somasub.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name QIP_FILE mux4x4.qip
+set_global_assignment -name BDF_FILE ula.bdf
+set_global_assignment -name QIP_FILE mux2x1.qip
+set_global_assignment -name BDF_FILE reg4bits.bdf
+set_global_assignment -name QIP_FILE mux2x4.qip
+set_global_assignment -name QIP_FILE rom1.qip
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_U13 -to master_clear
+set_location_assignment PIN_AA20 -to REG1_Display[0]
+set_location_assignment PIN_AB20 -to REG1_Display[1]
+set_location_assignment PIN_AA19 -to REG1_Display[2]
+set_location_assignment PIN_AA18 -to REG1_Display[3]
+set_location_assignment PIN_AB18 -to REG1_Display[4]
+set_location_assignment PIN_AA17 -to REG1_Display[5]
+set_location_assignment PIN_U22 -to REG1_Display[6]
+set_location_assignment PIN_U21 -to REG2_Display[0]
+set_location_assignment PIN_V21 -to REG2_Display[1]
+set_location_assignment PIN_W22 -to REG2_Display[2]
+set_location_assignment PIN_W21 -to REG2_Display[3]
+set_location_assignment PIN_Y22 -to REG2_Display[4]
+set_location_assignment PIN_Y21 -to REG2_Display[5]
+set_location_assignment PIN_AA22 -to REG2_Display[6]
 set_location_assignment PIN_AB12 -to clock_manual
 set_location_assignment PIN_M9 -to clock_real
-set_location_assignment PIN_U7 -to rst_key
 set_location_assignment PIN_Y19 -to display_mem1[0]
+set_location_assignment PIN_AB17 -to display_mem1[1]
 set_location_assignment PIN_AA10 -to display_mem1[2]
 set_location_assignment PIN_Y14 -to display_mem1[3]
 set_location_assignment PIN_V14 -to display_mem1[4]
 set_location_assignment PIN_AB22 -to display_mem1[5]
 set_location_assignment PIN_AB21 -to display_mem1[6]
-set_location_assignment PIN_AB17 -to display_mem1[1]
 set_location_assignment PIN_Y16 -to display_mem2[0]
 set_location_assignment PIN_W16 -to display_mem2[1]
 set_location_assignment PIN_Y17 -to display_mem2[2]
@@ -98,4 +126,6 @@ set_location_assignment PIN_N2 -to led[4]
 set_location_assignment PIN_N1 -to led[5]
 set_location_assignment PIN_U2 -to led[6]
 set_location_assignment PIN_U1 -to led[7]
+set_location_assignment PIN_U13 -to master_clr
+set_location_assignment PIN_U7 -to rst_key
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
