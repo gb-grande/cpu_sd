@@ -757,8 +757,50 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
+	(rect 920 816 1112 928)
+	(text "debouncer" (rect 5 0 55 12)(font "Arial" ))
+	(text "inst17" (rect 8 96 36 113)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_fpga" (rect 0 0 42 12)(font "Arial" ))
+		(text "clk_fpga" (rect 21 27 63 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rst_debouncer" (rect 0 0 69 12)(font "Arial" ))
+		(text "rst_debouncer" (rect 21 43 90 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "input_key" (rect 0 0 48 12)(font "Arial" ))
+		(text "input_key" (rect 21 59 69 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "out_key" (rect 0 0 40 12)(font "Arial" ))
+		(text "out_key" (rect 138 27 178 39)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32))
+	)
+	(parameter
+		"DELAY_BITS"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 176 96))
+	)
+	(annotation_block (parameter)(rect 1112 776 1296 816))
+)
+(symbol
 	(rect 1464 280 1680 408)
-	(text "rom1" (rect 94 0 128 16)(font "Arial" (font_size 10)))
+	(text "rom2" (rect 94 0 128 16)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -809,48 +851,6 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 0)(pt 0 0))
 		(line (pt 0 0)(pt 0 0))
 	)
-)
-(symbol
-	(rect 920 816 1112 928)
-	(text "debouncer" (rect 5 0 55 12)(font "Arial" ))
-	(text "inst17" (rect 8 96 36 113)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk_fpga" (rect 0 0 42 12)(font "Arial" ))
-		(text "clk_fpga" (rect 21 27 63 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "rst_debouncer" (rect 0 0 69 12)(font "Arial" ))
-		(text "rst_debouncer" (rect 21 43 90 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "input_key" (rect 0 0 48 12)(font "Arial" ))
-		(text "input_key" (rect 21 59 69 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 192 32)
-		(output)
-		(text "out_key" (rect 0 0 40 12)(font "Arial" ))
-		(text "out_key" (rect 138 27 178 39)(font "Arial" ))
-		(line (pt 192 32)(pt 176 32))
-	)
-	(parameter
-		"DELAY_BITS"
-		"16"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 176 96))
-	)
-	(annotation_block (parameter)(rect 1112 776 1296 816))
 )
 (connector
 	(pt 560 880)

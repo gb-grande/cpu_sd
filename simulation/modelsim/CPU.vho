@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition"
 
--- DATE "10/20/2022 14:39:18"
+-- DATE "10/20/2022 16:19:25"
 
 -- 
 -- Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -286,6 +286,14 @@ SIGNAL \inst19|inst53~0_combout\ : std_logic;
 SIGNAL \inst19|inst40~0_combout\ : std_logic;
 SIGNAL \inst|altsyncram_component|auto_generated|q_a\ : std_logic_vector(15 DOWNTO 0);
 SIGNAL \inst17|counter\ : std_logic_vector(15 DOWNTO 0);
+SIGNAL \ALT_INV_clock_manual~input_o\ : std_logic;
+SIGNAL \ALT_INV_rst_key~input_o\ : std_logic;
+SIGNAL \ALT_INV_master_clr~input_o\ : std_logic;
+SIGNAL \inst17|ALT_INV_out_key~1_combout\ : std_logic;
+SIGNAL \inst4|ALT_INV_inst~1_combout\ : std_logic;
+SIGNAL \inst4|ALT_INV_inst1~1_combout\ : std_logic;
+SIGNAL \inst4|ALT_INV_inst2~1_combout\ : std_logic;
+SIGNAL \inst4|ALT_INV_inst3~1_combout\ : std_logic;
 SIGNAL \inst17|ALT_INV_counter\ : std_logic_vector(15 DOWNTO 0);
 SIGNAL \inst|altsyncram_component|auto_generated|ALT_INV_q_a\ : std_logic_vector(15 DOWNTO 0);
 SIGNAL \inst17|ALT_INV_intermediate~0_combout\ : std_logic;
@@ -383,14 +391,6 @@ SIGNAL \inst6|ALT_INV_inst46~0_combout\ : std_logic;
 SIGNAL \inst6|ALT_INV_inst55~0_combout\ : std_logic;
 SIGNAL \inst6|ALT_INV_inst74~0_combout\ : std_logic;
 SIGNAL \inst6|ALT_INV_inst54~0_combout\ : std_logic;
-SIGNAL \ALT_INV_clock_manual~input_o\ : std_logic;
-SIGNAL \ALT_INV_rst_key~input_o\ : std_logic;
-SIGNAL \ALT_INV_master_clr~input_o\ : std_logic;
-SIGNAL \inst17|ALT_INV_out_key~1_combout\ : std_logic;
-SIGNAL \inst4|ALT_INV_inst~1_combout\ : std_logic;
-SIGNAL \inst4|ALT_INV_inst1~1_combout\ : std_logic;
-SIGNAL \inst4|ALT_INV_inst2~1_combout\ : std_logic;
-SIGNAL \inst4|ALT_INV_inst3~1_combout\ : std_logic;
 
 BEGIN
 
@@ -427,6 +427,14 @@ ww_devpor <= devpor;
 \inst|altsyncram_component|auto_generated|q_a\(13) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(13);
 \inst|altsyncram_component|auto_generated|q_a\(14) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(14);
 \inst|altsyncram_component|auto_generated|q_a\(15) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(15);
+\ALT_INV_clock_manual~input_o\ <= NOT \clock_manual~input_o\;
+\ALT_INV_rst_key~input_o\ <= NOT \rst_key~input_o\;
+\ALT_INV_master_clr~input_o\ <= NOT \master_clr~input_o\;
+\inst17|ALT_INV_out_key~1_combout\ <= NOT \inst17|out_key~1_combout\;
+\inst4|ALT_INV_inst~1_combout\ <= NOT \inst4|inst~1_combout\;
+\inst4|ALT_INV_inst1~1_combout\ <= NOT \inst4|inst1~1_combout\;
+\inst4|ALT_INV_inst2~1_combout\ <= NOT \inst4|inst2~1_combout\;
+\inst4|ALT_INV_inst3~1_combout\ <= NOT \inst4|inst3~1_combout\;
 \inst17|ALT_INV_counter\(12) <= NOT \inst17|counter\(12);
 \inst17|ALT_INV_counter\(13) <= NOT \inst17|counter\(13);
 \inst17|ALT_INV_counter\(14) <= NOT \inst17|counter\(14);
@@ -554,14 +562,6 @@ ww_devpor <= devpor;
 \inst6|ALT_INV_inst55~0_combout\ <= NOT \inst6|inst55~0_combout\;
 \inst6|ALT_INV_inst74~0_combout\ <= NOT \inst6|inst74~0_combout\;
 \inst6|ALT_INV_inst54~0_combout\ <= NOT \inst6|inst54~0_combout\;
-\ALT_INV_clock_manual~input_o\ <= NOT \clock_manual~input_o\;
-\ALT_INV_rst_key~input_o\ <= NOT \rst_key~input_o\;
-\ALT_INV_master_clr~input_o\ <= NOT \master_clr~input_o\;
-\inst17|ALT_INV_out_key~1_combout\ <= NOT \inst17|out_key~1_combout\;
-\inst4|ALT_INV_inst~1_combout\ <= NOT \inst4|inst~1_combout\;
-\inst4|ALT_INV_inst1~1_combout\ <= NOT \inst4|inst1~1_combout\;
-\inst4|ALT_INV_inst2~1_combout\ <= NOT \inst4|inst2~1_combout\;
-\inst4|ALT_INV_inst3~1_combout\ <= NOT \inst4|inst3~1_combout\;
 
 -- Location: IOOBUF_X40_Y0_N76
 \display_mem1[6]~output\ : cyclonev_io_obuf
@@ -2227,12 +2227,12 @@ PORT MAP (
 GENERIC MAP (
 	mem_init2 => "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
 	mem_init1 => "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-	mem_init0 => "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080006001062000930206102063020900209001060010040000000000000000000C0806304062020910106005",
+	mem_init0 => "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000600306200093020610106302090020000000000000000000000C0D0040009003060020900206305062010910206004",
 	data_interleave_offset_in_bits => 1,
 	data_interleave_width_in_bits => 1,
-	init_file => "Memória01.mif",
+	init_file => "Memória02.mif",
 	init_file_layout => "port_a",
-	logical_ram_name => "rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ALTSYNCRAM",
+	logical_ram_name => "rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ALTSYNCRAM",
 	operation_mode => "rom",
 	port_a_address_clear => "none",
 	port_a_address_width => 8,

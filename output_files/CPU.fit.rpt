@@ -1,5 +1,5 @@
 Fitter report for CPU
-Thu Oct 20 14:39:06 2022
+Thu Oct 20 16:19:12 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu Oct 20 14:39:06 2022       ;
+; Fitter Status                   ; Successful - Thu Oct 20 16:19:12 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; CPU                                         ;
 ; Top-level Entity Name           ; CPU                                         ;
@@ -212,7 +212,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/13672001/Desktop/Trabalho1/output_files/CPU.pin.
+The pin-out file can be found in C:/Users/13672001/Desktop/SD/cpu_sd/output_files/CPU.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -1037,9 +1037,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;          |mux_70e:auto_generated|         ; 1.0 (1.0)            ; 1.2 (1.2)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|mux2x4:inst15|lpm_mux:LPM_MUX_component|mux_70e:auto_generated           ; mux_70e         ; work         ;
 ;    |reg4bits:inst10|                      ; 1.3 (1.3)            ; 1.3 (1.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|reg4bits:inst10                                                          ; reg4bits        ; work         ;
 ;    |reg4bits:inst2|                       ; 1.3 (1.3)            ; 1.3 (1.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|reg4bits:inst2                                                           ; reg4bits        ; work         ;
-;    |rom1:inst|                            ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |CPU|rom1:inst                                                                ; rom1            ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |CPU|rom1:inst|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;          |altsyncram_m724:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |CPU|rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated ; altsyncram_m724 ; work         ;
+;    |rom2:inst|                            ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |CPU|rom2:inst                                                                ; rom2            ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |CPU|rom2:inst|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
+;          |altsyncram_n724:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |CPU|rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated ; altsyncram_n724 ; work         ;
 ;    |ula:inst22|                           ; 6.3 (0.0)            ; 6.3 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22                                                               ; ula             ; work         ;
 ;       |mux4x4:inst1|                      ; 2.7 (0.0)            ; 2.7 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|mux4x4:inst1                                                  ; mux4x4          ; work         ;
 ;          |lpm_mux:LPM_MUX_component|      ; 2.7 (0.0)            ; 2.7 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|mux4x4:inst1|lpm_mux:LPM_MUX_component                        ; lpm_mux         ; work         ;
@@ -1176,8 +1176,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; debouncer:inst17|out_key~8                                                       ; LABCELL_X31_Y1_N54  ; 17      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; inst12                                                                           ; MLABCELL_X37_Y4_N9  ; 4       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
 ; inst14                                                                           ; LABCELL_X41_Y4_N30  ; 8       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|q_a[14] ; M10K_X38_Y4_N0      ; 11      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|q_a[15] ; M10K_X38_Y4_N0      ; 11      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|q_a[14] ; M10K_X38_Y4_N0      ; 11      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|q_a[15] ; M10K_X38_Y4_N0      ; 11      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; rst_key                                                                          ; PIN_U7              ; 21      ; Async. clear, Latch enable ; no     ; --                   ; --               ; --                        ;
 +----------------------------------------------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
@@ -1196,7 +1196,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+---------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+------------------------+
 ; Name                                                                                ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M10K blocks ; MLABs ; MIF           ; Location       ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs          ;
 +-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+---------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+------------------------+
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 256          ; 16           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 4096 ; 256                         ; 16                          ; --                          ; --                          ; 4096                ; 1           ; 0     ; Memória01.mif ; M10K_X38_Y4_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Unsupported Depth ;
+; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 256          ; 16           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 4096 ; 256                         ; 16                          ; --                          ; --                          ; 4096                ; 1           ; 0     ; Memória02.mif ; M10K_X38_Y4_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Unsupported Depth ;
 +-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+---------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+------------------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -1406,15 +1406,15 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-------------------+
 ; Source Register                                                                                           ; Destination Register                                                                                      ; Delay Added in ns ;
 +-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-------------------+
-; Count8:inst4|inst3~_emulated                                                                              ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 3.569             ;
-; Count8:inst4|inst1~_emulated                                                                              ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 3.526             ;
+; Count8:inst4|inst3~_emulated                                                                              ; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a2~porta_address_reg0  ; 3.569             ;
+; Count8:inst4|inst1~_emulated                                                                              ; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a2~porta_address_reg0  ; 3.526             ;
 ; Count8:inst4|inst~_emulated                                                                               ; Count8:inst4|inst~_emulated                                                                               ; 3.511             ;
 ; Count8:inst4|inst2~_emulated                                                                              ; Count8:inst4|inst2~_emulated                                                                              ; 3.465             ;
 ; clock_manual                                                                                              ; debouncer:inst17|out_key~1                                                                                ; 3.364             ;
-; Count8:inst4|inst4                                                                                        ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a10~porta_address_reg0 ; 3.317             ;
-; Count8:inst4|inst5                                                                                        ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a10~porta_address_reg0 ; 3.317             ;
-; Count8:inst4|inst6                                                                                        ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a11~porta_address_reg0 ; 3.317             ;
-; Count8:inst4|inst7                                                                                        ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a3~porta_address_reg0  ; 3.317             ;
+; Count8:inst4|inst4                                                                                        ; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a10~porta_address_reg0 ; 3.317             ;
+; Count8:inst4|inst5                                                                                        ; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a10~porta_address_reg0 ; 3.317             ;
+; Count8:inst4|inst6                                                                                        ; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a11~porta_address_reg0 ; 3.317             ;
+; Count8:inst4|inst7                                                                                        ; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a3~porta_address_reg0  ; 3.317             ;
 ; reg4bits:inst2|inst                                                                                       ; reg4bits:inst2|inst1                                                                                      ; 2.894             ;
 ; reg4bits:inst10|inst                                                                                      ; reg4bits:inst2|inst1                                                                                      ; 2.891             ;
 ; reg4bits:inst10|inst1                                                                                     ; reg4bits:inst2|inst2                                                                                      ; 2.846             ;
@@ -1426,21 +1426,21 @@ This will disable optimization of problematic paths and expose them for further 
 ; debouncer:inst17|out_key~1                                                                                ; debouncer:inst17|out_key~_emulated                                                                        ; 2.456             ;
 ; debouncer:inst17|out_key~_emulated                                                                        ; debouncer:inst17|out_key~_emulated                                                                        ; 2.456             ;
 ; rst_key                                                                                                   ; debouncer:inst17|out_key~_emulated                                                                        ; 2.456             ;
-; Count8:inst4|inst3~1                                                                                      ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a10~porta_address_reg0 ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a11~porta_address_reg0 ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
-; master_clr                                                                                                ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a3~porta_address_reg0  ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a0~porta_address_reg0  ; Count8:inst4|inst~_emulated                                                                               ; 2.290             ;
+; Count8:inst4|inst3~1                                                                                      ; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
+; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a10~porta_address_reg0 ; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
+; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a11~porta_address_reg0 ; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
+; master_clr                                                                                                ; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
+; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a3~porta_address_reg0  ; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
+; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a0~porta_address_reg0  ; Count8:inst4|inst~_emulated                                                                               ; 2.290             ;
 ; Count8:inst4|inst~1                                                                                       ; Count8:inst4|inst~_emulated                                                                               ; 2.290             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a1~porta_address_reg0  ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.277             ;
-; Count8:inst4|inst1~1                                                                                      ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.277             ;
+; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a1~porta_address_reg0  ; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.277             ;
+; Count8:inst4|inst1~1                                                                                      ; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.277             ;
 ; Count8:inst4|inst2~1                                                                                      ; Count8:inst4|inst2~_emulated                                                                              ; 2.244             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; Count8:inst4|inst2~_emulated                                                                              ; 2.244             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a13~porta_address_reg0 ; reg4bits:inst2|inst1                                                                                      ; 2.146             ;
+; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a2~porta_address_reg0  ; Count8:inst4|inst2~_emulated                                                                              ; 2.244             ;
+; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a13~porta_address_reg0 ; reg4bits:inst2|inst1                                                                                      ; 2.146             ;
 ; debouncer:inst17|intermediate~_emulated                                                                   ; debouncer:inst17|out_key~_emulated                                                                        ; 1.832             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a8~porta_address_reg0  ; reg4bits:inst10|inst                                                                                      ; 1.275             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a9~porta_address_reg0  ; reg4bits:inst10|inst                                                                                      ; 1.275             ;
+; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a8~porta_address_reg0  ; reg4bits:inst10|inst                                                                                      ; 1.275             ;
+; rom2:inst|altsyncram:altsyncram_component|altsyncram_n724:auto_generated|ram_block1a9~porta_address_reg0  ; reg4bits:inst10|inst                                                                                      ; 1.275             ;
 ; debouncer:inst17|counter[15]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
 ; debouncer:inst17|counter[14]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
 ; debouncer:inst17|counter[13]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
@@ -1488,7 +1488,7 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:04
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:05
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
@@ -1501,23 +1501,23 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
-Info (11888): Total time spent on timing analysis during the Fitter is 1.08 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 1.03 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
-Info (144001): Generated suppressed messages file C:/Users/13672001/Desktop/Trabalho1/output_files/CPU.fit.smsg
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
+Info (144001): Generated suppressed messages file C:/Users/13672001/Desktop/SD/cpu_sd/output_files/CPU.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6284 megabytes
-    Info: Processing ended: Thu Oct 20 14:39:06 2022
+    Info: Peak virtual memory: 6287 megabytes
+    Info: Processing ended: Thu Oct 20 16:19:12 2022
     Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Total CPU time (on all processors): 00:00:35
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/13672001/Desktop/Trabalho1/output_files/CPU.fit.smsg.
+The suppressed messages can be found in C:/Users/13672001/Desktop/SD/cpu_sd/output_files/CPU.fit.smsg.
 
 
