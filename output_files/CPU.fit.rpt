@@ -1,5 +1,5 @@
 Fitter report for CPU
-Thu Oct 20 14:39:06 2022
+Sat Oct 22 16:06:27 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu Oct 20 14:39:06 2022       ;
+; Fitter Status                   ; Successful - Sat Oct 22 16:06:27 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; CPU                                         ;
 ; Top-level Entity Name           ; CPU                                         ;
@@ -72,7 +72,7 @@ https://fpgasoftware.intel.com/eula.
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; 62 / 18,480 ( < 1 % )                       ;
-; Total registers                 ; 34                                          ;
+; Total registers                 ; 35                                          ;
 ; Total pins                      ; 54 / 224 ( 24 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 4,096 / 3,153,920 ( < 1 % )                 ;
@@ -159,9 +159,9 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.0%      ;
-;     Processor 3            ;   0.9%      ;
-;     Processor 4            ;   0.9%      ;
+;     Processor 2            ;   1.2%      ;
+;     Processor 3            ;   1.0%      ;
+;     Processor 4            ;   1.0%      ;
 +----------------------------+-------------+
 
 
@@ -180,8 +180,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 273 ) ; 0.00 % ( 0 / 273 )         ; 0.00 % ( 0 / 273 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 273 ) ; 0.00 % ( 0 / 273 )         ; 0.00 % ( 0 / 273 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 276 ) ; 0.00 % ( 0 / 276 )         ; 0.00 % ( 0 / 276 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 276 ) ; 0.00 % ( 0 / 276 )         ; 0.00 % ( 0 / 276 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -204,7 +204,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 273 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 276 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -212,7 +212,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/13672001/Desktop/Trabalho1/output_files/CPU.pin.
+The pin-out file can be found in C:/Users/13695059/Desktop/sd/cpu_sd/output_files/CPU.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -223,9 +223,9 @@ The pin-out file can be found in C:/Users/13672001/Desktop/Trabalho1/output_file
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 62 / 18,480        ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 62                 ;       ;
 ;     [A] ALMs used in final placement [=a+b+c+d]             ; 64 / 18,480        ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 13                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 47                 ;       ;
-;         [c] ALMs used for registers                         ; 4                  ;       ;
+;         [a] ALMs used for LUT logic and registers           ; 15                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 46                 ;       ;
+;         [c] ALMs used for registers                         ; 3                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
 ;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 18,480         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18,480         ; 0 %   ;
@@ -236,24 +236,24 @@ The pin-out file can be found in C:/Users/13672001/Desktop/Trabalho1/output_file
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 11 / 1,848         ; < 1 % ;
-;     -- Logic LABs                                           ; 11                 ;       ;
+; Total LABs:  partially or completely used                   ; 13 / 1,848         ; < 1 % ;
+;     -- Logic LABs                                           ; 13                 ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 114                ;       ;
-;     -- 7 input functions                                    ; 1                  ;       ;
+; Combinational ALUT usage for logic                          ; 116                ;       ;
+;     -- 7 input functions                                    ; 0                  ;       ;
 ;     -- 6 input functions                                    ; 8                  ;       ;
-;     -- 5 input functions                                    ; 6                  ;       ;
-;     -- 4 input functions                                    ; 59                 ;       ;
-;     -- <=3 input functions                                  ; 40                 ;       ;
+;     -- 5 input functions                                    ; 11                 ;       ;
+;     -- 4 input functions                                    ; 55                 ;       ;
+;     -- <=3 input functions                                  ; 42                 ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 34                 ;       ;
+; Dedicated logic registers                                   ; 35                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
-;         -- Primary logic registers                          ; 34 / 36,960        ; < 1 % ;
+;         -- Primary logic registers                          ; 35 / 36,960        ; < 1 % ;
 ;         -- Secondary logic registers                        ; 0 / 36,960         ; 0 %   ;
 ;     -- By function:                                         ;                    ;       ;
-;         -- Design implementation registers                  ; 34                 ;       ;
+;         -- Design implementation registers                  ; 35                 ;       ;
 ;         -- Routing optimization registers                   ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
@@ -281,11 +281,11 @@ The pin-out file can be found in C:/Users/13672001/Desktop/Trabalho1/output_file
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.3% / 0.3% / 0.2% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 3.1% / 3.3% / 2.3% ;       ;
-; Maximum fan-out                                             ; 183                ;       ;
+; Peak interconnect usage (total/H/V)                         ; 3.3% / 3.7% / 2.1% ;       ;
+; Maximum fan-out                                             ; 176                ;       ;
 ; Highest non-global fan-out                                  ; 21                 ;       ;
-; Total fan-out                                               ; 547                ;       ;
-; Average fan-out                                             ; 2.12               ;       ;
+; Total fan-out                                               ; 560                ;       ;
+; Average fan-out                                             ; 2.15               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -297,9 +297,9 @@ The pin-out file can be found in C:/Users/13672001/Desktop/Trabalho1/output_file
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 62 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 62                   ; 0                              ;
 ;     [A] ALMs used in final placement [=a+b+c+d]             ; 64 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 13                   ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 47                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 4                    ; 0                              ;
+;         [a] ALMs used for LUT logic and registers           ; 15                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 46                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 3                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
 ;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 18480 ( < 1 % )  ; 0 / 18480 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18480 ( 0 % )    ; 0 / 18480 ( 0 % )              ;
@@ -310,16 +310,16 @@ The pin-out file can be found in C:/Users/13672001/Desktop/Trabalho1/output_file
 ;                                                             ;                      ;                                ;
 ; Difficulty packing design                                   ; Low                  ; Low                            ;
 ;                                                             ;                      ;                                ;
-; Total LABs:  partially or completely used                   ; 11 / 1848 ( < 1 % )  ; 0 / 1848 ( 0 % )               ;
-;     -- Logic LABs                                           ; 11                   ; 0                              ;
+; Total LABs:  partially or completely used                   ; 13 / 1848 ( < 1 % )  ; 0 / 1848 ( 0 % )               ;
+;     -- Logic LABs                                           ; 13                   ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
-; Combinational ALUT usage for logic                          ; 114                  ; 0                              ;
-;     -- 7 input functions                                    ; 1                    ; 0                              ;
+; Combinational ALUT usage for logic                          ; 116                  ; 0                              ;
+;     -- 7 input functions                                    ; 0                    ; 0                              ;
 ;     -- 6 input functions                                    ; 8                    ; 0                              ;
-;     -- 5 input functions                                    ; 6                    ; 0                              ;
-;     -- 4 input functions                                    ; 59                   ; 0                              ;
-;     -- <=3 input functions                                  ; 40                   ; 0                              ;
+;     -- 5 input functions                                    ; 11                   ; 0                              ;
+;     -- 4 input functions                                    ; 55                   ; 0                              ;
+;     -- <=3 input functions                                  ; 42                   ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
@@ -327,10 +327,10 @@ The pin-out file can be found in C:/Users/13672001/Desktop/Trabalho1/output_file
 ;                                                             ;                      ;                                ;
 ; Dedicated logic registers                                   ; 0                    ; 0                              ;
 ;     -- By type:                                             ;                      ;                                ;
-;         -- Primary logic registers                          ; 34 / 36960 ( < 1 % ) ; 0 / 36960 ( 0 % )              ;
+;         -- Primary logic registers                          ; 35 / 36960 ( < 1 % ) ; 0 / 36960 ( 0 % )              ;
 ;         -- Secondary logic registers                        ; 0 / 36960 ( 0 % )    ; 0 / 36960 ( 0 % )              ;
 ;     -- By function:                                         ;                      ;                                ;
-;         -- Design implementation registers                  ; 34                   ; 0                              ;
+;         -- Design implementation registers                  ; 35                   ; 0                              ;
 ;         -- Routing optimization registers                   ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
@@ -349,8 +349,8 @@ The pin-out file can be found in C:/Users/13672001/Desktop/Trabalho1/output_file
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 670                  ; 0                              ;
-;     -- Registered Connections                               ; 125                  ; 0                              ;
+;     -- Total Connections                                    ; 675                  ; 0                              ;
+;     -- Registered Connections                               ; 132                  ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
 ;     -- Top                                                  ; 0                    ; 0                              ;
@@ -384,7 +384,7 @@ The pin-out file can be found in C:/Users/13672001/Desktop/Trabalho1/output_file
 +--------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; clock_manual ; AB12  ; 4A       ; 33           ; 0            ; 74           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; clock_real   ; M9    ; 3B       ; 22           ; 0            ; 0            ; 18                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; master_clr   ; U13   ; 4A       ; 33           ; 0            ; 40           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; master_clr   ; U13   ; 4A       ; 33           ; 0            ; 40           ; 7                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; rst_key      ; U7    ; 3A       ; 10           ; 0            ; 91           ; 21                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
@@ -1023,31 +1023,31 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                           ; Entity Name     ; Library Name ;
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
-; |CPU                                      ; 62.0 (1.2)           ; 63.5 (1.2)                       ; 1.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 114 (3)             ; 34 (0)                    ; 0 (0)         ; 4096              ; 1     ; 0          ; 54   ; 0            ; |CPU                                                                          ; CPU             ; work         ;
-;    |Count8:inst4|                         ; 15.0 (15.0)          ; 16.7 (16.7)                      ; 1.7 (1.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 29 (29)             ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|Count8:inst4                                                             ; Count8          ; work         ;
-;    |debouncer:inst17|                     ; 14.5 (14.5)          ; 14.5 (14.5)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (26)             ; 18 (18)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|debouncer:inst17                                                         ; debouncer       ; work         ;
-;    |display4bits:inst18|                  ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|display4bits:inst18                                                      ; display4bits    ; work         ;
+; |CPU                                      ; 62.0 (1.7)           ; 63.0 (1.7)                       ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 116 (4)             ; 35 (1)                    ; 0 (0)         ; 4096              ; 1     ; 0          ; 54   ; 0            ; |CPU                                                                          ; CPU             ; work         ;
+;    |Count8:inst4|                         ; 15.2 (15.2)          ; 17.5 (17.5)                      ; 2.3 (2.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 29 (29)             ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|Count8:inst4                                                             ; Count8          ; work         ;
+;    |debouncer:inst17|                     ; 14.0 (14.0)          ; 14.5 (14.5)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (26)             ; 18 (18)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|debouncer:inst17                                                         ; debouncer       ; work         ;
+;    |display4bits:inst18|                  ; 3.2 (3.2)            ; 3.2 (3.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|display4bits:inst18                                                      ; display4bits    ; work         ;
 ;    |display4bits:inst19|                  ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|display4bits:inst19                                                      ; display4bits    ; work         ;
-;    |display4bits:inst6|                   ; 3.3 (3.3)            ; 3.5 (3.5)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|display4bits:inst6                                                       ; display4bits    ; work         ;
+;    |display4bits:inst6|                   ; 3.0 (3.0)            ; 3.5 (3.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|display4bits:inst6                                                       ; display4bits    ; work         ;
 ;    |display4bits:inst7|                   ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|display4bits:inst7                                                       ; display4bits    ; work         ;
-;    |display4bits:inst8|                   ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|display4bits:inst8                                                       ; display4bits    ; work         ;
+;    |display4bits:inst8|                   ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (8)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|display4bits:inst8                                                       ; display4bits    ; work         ;
 ;    |display4bits:inst9|                   ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|display4bits:inst9                                                       ; display4bits    ; work         ;
-;    |mux2x4:inst15|                        ; 1.0 (0.0)            ; 1.2 (0.0)                        ; 0.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|mux2x4:inst15                                                            ; mux2x4          ; work         ;
-;       |lpm_mux:LPM_MUX_component|         ; 1.0 (0.0)            ; 1.2 (0.0)                        ; 0.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|mux2x4:inst15|lpm_mux:LPM_MUX_component                                  ; lpm_mux         ; work         ;
-;          |mux_70e:auto_generated|         ; 1.0 (1.0)            ; 1.2 (1.2)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|mux2x4:inst15|lpm_mux:LPM_MUX_component|mux_70e:auto_generated           ; mux_70e         ; work         ;
+;    |mux2x4:inst15|                        ; 0.9 (0.0)            ; 1.5 (0.0)                        ; 0.6 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|mux2x4:inst15                                                            ; mux2x4          ; work         ;
+;       |lpm_mux:LPM_MUX_component|         ; 0.9 (0.0)            ; 1.5 (0.0)                        ; 0.6 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|mux2x4:inst15|lpm_mux:LPM_MUX_component                                  ; lpm_mux         ; work         ;
+;          |mux_70e:auto_generated|         ; 0.9 (0.9)            ; 1.5 (1.5)                        ; 0.6 (0.6)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|mux2x4:inst15|lpm_mux:LPM_MUX_component|mux_70e:auto_generated           ; mux_70e         ; work         ;
 ;    |reg4bits:inst10|                      ; 1.3 (1.3)            ; 1.3 (1.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|reg4bits:inst10                                                          ; reg4bits        ; work         ;
-;    |reg4bits:inst2|                       ; 1.3 (1.3)            ; 1.3 (1.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|reg4bits:inst2                                                           ; reg4bits        ; work         ;
+;    |reg4bits:inst2|                       ; 1.2 (1.2)            ; 1.2 (1.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|reg4bits:inst2                                                           ; reg4bits        ; work         ;
 ;    |rom1:inst|                            ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |CPU|rom1:inst                                                                ; rom1            ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |CPU|rom1:inst|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;          |altsyncram_m724:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |CPU|rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated ; altsyncram_m724 ; work         ;
-;    |ula:inst22|                           ; 6.3 (0.0)            ; 6.3 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22                                                               ; ula             ; work         ;
-;       |mux4x4:inst1|                      ; 2.7 (0.0)            ; 2.7 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|mux4x4:inst1                                                  ; mux4x4          ; work         ;
-;          |lpm_mux:LPM_MUX_component|      ; 2.7 (0.0)            ; 2.7 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|mux4x4:inst1|lpm_mux:LPM_MUX_component                        ; lpm_mux         ; work         ;
-;             |mux_a0e:auto_generated|      ; 2.7 (2.7)            ; 2.7 (2.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|mux4x4:inst1|lpm_mux:LPM_MUX_component|mux_a0e:auto_generated ; mux_a0e         ; work         ;
-;       |somasub:inst|                      ; 2.5 (0.0)            ; 2.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|somasub:inst                                                  ; somasub         ; work         ;
-;          |somasubParcial:inst6|           ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|somasub:inst|somasubParcial:inst6                             ; somasubParcial  ; work         ;
-;          |somasubParcial:inst7|           ; 1.7 (1.7)            ; 1.7 (1.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|somasub:inst|somasubParcial:inst7                             ; somasubParcial  ; work         ;
-;          |somasubParcial:inst8|           ; 0.3 (0.3)            ; 0.3 (0.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|somasub:inst|somasubParcial:inst8                             ; somasubParcial  ; work         ;
+;          |altsyncram_2c24:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |CPU|rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated ; altsyncram_2c24 ; work         ;
+;    |ula:inst22|                           ; 5.7 (0.0)            ; 5.7 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22                                                               ; ula             ; work         ;
+;       |mux4x4:inst1|                      ; 2.3 (0.0)            ; 2.3 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|mux4x4:inst1                                                  ; mux4x4          ; work         ;
+;          |lpm_mux:LPM_MUX_component|      ; 2.3 (0.0)            ; 2.3 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|mux4x4:inst1|lpm_mux:LPM_MUX_component                        ; lpm_mux         ; work         ;
+;             |mux_a0e:auto_generated|      ; 2.3 (2.3)            ; 2.3 (2.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|mux4x4:inst1|lpm_mux:LPM_MUX_component|mux_a0e:auto_generated ; mux_a0e         ; work         ;
+;       |somasub:inst|                      ; 2.2 (0.0)            ; 2.2 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|somasub:inst                                                  ; somasub         ; work         ;
+;          |somasubParcial:inst6|           ; 0.3 (0.3)            ; 0.3 (0.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|somasub:inst|somasubParcial:inst6                             ; somasubParcial  ; work         ;
+;          |somasubParcial:inst7|           ; 1.3 (1.3)            ; 1.3 (1.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|somasub:inst|somasubParcial:inst7                             ; somasubParcial  ; work         ;
+;          |somasubParcial:inst8|           ; 0.3 (0.3)            ; 0.5 (0.5)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|somasub:inst|somasubParcial:inst8                             ; somasubParcial  ; work         ;
 ;       |somasub:inst5|                     ; 1.2 (0.0)            ; 1.2 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|somasub:inst5                                                 ; somasub         ; work         ;
 ;          |somasubParcial:inst7|           ; 1.2 (1.2)            ; 1.2 (1.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |CPU|ula:inst22|somasub:inst5|somasubParcial:inst7                            ; somasubParcial  ; work         ;
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
@@ -1110,7 +1110,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; REG2_Display[1] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; REG2_Display[0] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; master_clr      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; rst_key         ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; rst_key         ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; clock_manual    ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; clock_real      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +-----------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
@@ -1128,6 +1128,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Count8:inst4|inst27                     ; 0                 ; 0       ;
 ;      - Count8:inst4|inst17                     ; 0                 ; 0       ;
 ;      - Count8:inst4|inst12                     ; 0                 ; 0       ;
+;      - inst33                                  ; 0                 ; 0       ;
 ; rst_key                                        ;                   ;         ;
 ;      - debouncer:inst17|counter[0]             ; 1                 ; 0       ;
 ;      - debouncer:inst17|counter[15]            ; 1                 ; 0       ;
@@ -1148,15 +1149,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - debouncer:inst17|out_key~_emulated      ; 1                 ; 0       ;
 ;      - debouncer:inst17|out_key~2              ; 1                 ; 0       ;
 ;      - debouncer:inst17|intermediate~_emulated ; 1                 ; 0       ;
-;      - debouncer:inst17|intermediate~0         ; 0                 ; 0       ;
+;      - debouncer:inst17|intermediate~0         ; 1                 ; 0       ;
 ;      - debouncer:inst17|out_key~1              ; 1                 ; 0       ;
 ; clock_manual                                   ;                   ;         ;
 ;      - debouncer:inst17|out_key~2              ; 1                 ; 0       ;
-;      - debouncer:inst17|out_key~8              ; 0                 ; 0       ;
+;      - debouncer:inst17|out_key~8              ; 1                 ; 0       ;
 ;      - debouncer:inst17|intermediate~0         ; 0                 ; 0       ;
-;      - debouncer:inst17|always0~0              ; 0                 ; 0       ;
-;      - debouncer:inst17|intermediate~1         ; 0                 ; 0       ;
-;      - debouncer:inst17|out_key~1              ; 0                 ; 0       ;
+;      - debouncer:inst17|always0~0              ; 1                 ; 0       ;
+;      - debouncer:inst17|intermediate~1         ; 1                 ; 0       ;
+;      - debouncer:inst17|out_key~1              ; 1                 ; 0       ;
 ; clock_real                                     ;                   ;         ;
 +------------------------------------------------+-------------------+---------+
 
@@ -1166,18 +1167,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                                             ; Location            ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------------------------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; Count8:inst4|inst1~0                                                             ; MLABCELL_X37_Y4_N24 ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; Count8:inst4|inst2~0                                                             ; LABCELL_X39_Y4_N42  ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; Count8:inst4|inst3~0                                                             ; LABCELL_X36_Y4_N6   ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; Count8:inst4|inst~0                                                              ; LABCELL_X39_Y4_N3   ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; Count8:inst4|inst1~0                                                             ; LABCELL_X39_Y2_N15  ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; Count8:inst4|inst2~0                                                             ; LABCELL_X36_Y2_N15  ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; Count8:inst4|inst3~0                                                             ; MLABCELL_X37_Y2_N42 ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; Count8:inst4|inst~0                                                              ; LABCELL_X39_Y2_N0   ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
 ; clock_real                                                                       ; PIN_M9              ; 18      ; Clock                      ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; debouncer:inst17|always0~0                                                       ; LABCELL_X32_Y1_N9   ; 16      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; debouncer:inst17|out_key~2                                                       ; LABCELL_X32_Y1_N45  ; 18      ; Clock                      ; no     ; --                   ; --               ; --                        ;
-; debouncer:inst17|out_key~8                                                       ; LABCELL_X31_Y1_N54  ; 17      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; inst12                                                                           ; MLABCELL_X37_Y4_N9  ; 4       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; inst14                                                                           ; LABCELL_X41_Y4_N30  ; 8       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|q_a[14] ; M10K_X38_Y4_N0      ; 11      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|q_a[15] ; M10K_X38_Y4_N0      ; 11      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; debouncer:inst17|always0~0                                                       ; LABCELL_X20_Y1_N54  ; 16      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; debouncer:inst17|out_key~2                                                       ; LABCELL_X21_Y1_N57  ; 19      ; Clock                      ; no     ; --                   ; --               ; --                        ;
+; debouncer:inst17|out_key~8                                                       ; LABCELL_X20_Y1_N48  ; 17      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; inst12                                                                           ; LABCELL_X36_Y2_N30  ; 4       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; inst14                                                                           ; LABCELL_X35_Y2_N42  ; 8       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; inst33                                                                           ; MLABCELL_X37_Y2_N27 ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|q_a[14] ; M10K_X38_Y2_N0      ; 11      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|q_a[15] ; M10K_X38_Y2_N0      ; 11      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; rst_key                                                                          ; PIN_U7              ; 21      ; Async. clear, Latch enable ; no     ; --                   ; --               ; --                        ;
 +----------------------------------------------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
@@ -1191,13 +1193,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------+----------+---------+----------------------+------------------+---------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-+-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+---------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+------------------------+
-; Name                                                                                ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M10K blocks ; MLABs ; MIF           ; Location       ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs          ;
-+-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+---------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+------------------------+
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 256          ; 16           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 4096 ; 256                         ; 16                          ; --                          ; --                          ; 4096                ; 1           ; 0     ; Memória01.mif ; M10K_X38_Y4_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Unsupported Depth ;
-+-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+---------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+------------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+------------------------+
+; Name                                                                                ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M10K blocks ; MLABs ; MIF              ; Location       ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs          ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+------------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+------------------------+
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 256          ; 16           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 4096 ; 256                         ; 16                          ; --                          ; --                          ; 4096                ; 1           ; 0     ; ../Memória02.mif ; M10K_X38_Y2_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Unsupported Depth ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+------------------+----------------+----------------------+-----------------+-----------------+----------+------------------------+------------------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
@@ -1206,21 +1208,21 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +------------------------------+-------------------------+
 ; Routing Resource Type        ; Usage                   ;
 +------------------------------+-------------------------+
-; Block interconnects          ; 230 / 140,056 ( < 1 % ) ;
-; C12 interconnects            ; 12 / 6,048 ( < 1 % )    ;
-; C2 interconnects             ; 93 / 54,648 ( < 1 % )   ;
-; C4 interconnects             ; 85 / 25,920 ( < 1 % )   ;
+; Block interconnects          ; 261 / 140,056 ( < 1 % ) ;
+; C12 interconnects            ; 23 / 6,048 ( < 1 % )    ;
+; C2 interconnects             ; 99 / 54,648 ( < 1 % )   ;
+; C4 interconnects             ; 61 / 25,920 ( < 1 % )   ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )          ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )          ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )          ;
-; Direct links                 ; 12 / 140,056 ( < 1 % )  ;
+; Direct links                 ; 28 / 140,056 ( < 1 % )  ;
 ; Global clocks                ; 1 / 16 ( 6 % )          ;
-; Local interconnects          ; 43 / 36,960 ( < 1 % )   ;
+; Local interconnects          ; 34 / 36,960 ( < 1 % )   ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )          ;
-; R14 interconnects            ; 90 / 5,984 ( 2 % )      ;
-; R14/C12 interconnect drivers ; 97 / 9,504 ( 1 % )      ;
-; R3 interconnects             ; 184 / 60,192 ( < 1 % )  ;
-; R6 interconnects             ; 154 / 127,072 ( < 1 % ) ;
+; R14 interconnects            ; 85 / 5,984 ( 1 % )      ;
+; R14/C12 interconnect drivers ; 99 / 9,504 ( 1 % )      ;
+; R3 interconnects             ; 207 / 60,192 ( < 1 % )  ;
+; R6 interconnects             ; 168 / 127,072 ( < 1 % ) ;
 ; Spine clocks                 ; 1 / 120 ( < 1 % )       ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )       ;
 +------------------------------+-------------------------+
@@ -1390,12 +1392,13 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +--------------------------+--------------------------+-------------------+
 ; Source Clock(s)          ; Destination Clock(s)     ; Delay Added in ns ;
 +--------------------------+--------------------------+-------------------+
-; clock_manual,rst_key     ; clock_manual,rst_key     ; 63.4              ;
-; clock_manual,rst_key,I/O ; clock_manual,rst_key     ; 40.8              ;
-; I/O                      ; clock_real               ; 8.5               ;
-; clock_real,rst_key,I/O   ; clock_real               ; 7.8               ;
-; clock_manual,rst_key     ; clock_manual,rst_key,I/O ; 5.0               ;
-; I/O                      ; rst_key                  ; 3.4               ;
+; clock_manual,rst_key     ; clock_manual,rst_key     ; 59.3              ;
+; clock_manual,rst_key,I/O ; clock_manual,rst_key     ; 34.8              ;
+; clock_manual,rst_key     ; clock_manual,rst_key,I/O ; 15.3              ;
+; I/O                      ; clock_real               ; 10.5              ;
+; clock_real,rst_key,I/O   ; clock_real               ; 7.1               ;
+; clock_manual,rst_key,I/O ; clock_manual,rst_key,I/O ; 3.0               ;
+; rst_key                  ; clock_real               ; 2.8               ;
 +--------------------------+--------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1406,59 +1409,60 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-------------------+
 ; Source Register                                                                                           ; Destination Register                                                                                      ; Delay Added in ns ;
 +-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-------------------+
-; Count8:inst4|inst3~_emulated                                                                              ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 3.569             ;
-; Count8:inst4|inst1~_emulated                                                                              ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 3.526             ;
-; Count8:inst4|inst~_emulated                                                                               ; Count8:inst4|inst~_emulated                                                                               ; 3.511             ;
-; Count8:inst4|inst2~_emulated                                                                              ; Count8:inst4|inst2~_emulated                                                                              ; 3.465             ;
-; clock_manual                                                                                              ; debouncer:inst17|out_key~1                                                                                ; 3.364             ;
-; Count8:inst4|inst4                                                                                        ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a10~porta_address_reg0 ; 3.317             ;
-; Count8:inst4|inst5                                                                                        ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a10~porta_address_reg0 ; 3.317             ;
-; Count8:inst4|inst6                                                                                        ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a11~porta_address_reg0 ; 3.317             ;
-; Count8:inst4|inst7                                                                                        ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a3~porta_address_reg0  ; 3.317             ;
-; reg4bits:inst2|inst                                                                                       ; reg4bits:inst2|inst1                                                                                      ; 2.894             ;
-; reg4bits:inst10|inst                                                                                      ; reg4bits:inst2|inst1                                                                                      ; 2.891             ;
-; reg4bits:inst10|inst1                                                                                     ; reg4bits:inst2|inst2                                                                                      ; 2.846             ;
-; reg4bits:inst2|inst1                                                                                      ; reg4bits:inst2|inst2                                                                                      ; 2.840             ;
-; reg4bits:inst10|inst3                                                                                     ; reg4bits:inst10|inst3                                                                                     ; 2.799             ;
-; reg4bits:inst2|inst2                                                                                      ; reg4bits:inst2|inst2                                                                                      ; 2.793             ;
-; reg4bits:inst10|inst2                                                                                     ; reg4bits:inst2|inst2                                                                                      ; 2.792             ;
-; reg4bits:inst2|inst3                                                                                      ; reg4bits:inst10|inst3                                                                                     ; 2.788             ;
-; debouncer:inst17|out_key~1                                                                                ; debouncer:inst17|out_key~_emulated                                                                        ; 2.456             ;
-; debouncer:inst17|out_key~_emulated                                                                        ; debouncer:inst17|out_key~_emulated                                                                        ; 2.456             ;
-; rst_key                                                                                                   ; debouncer:inst17|out_key~_emulated                                                                        ; 2.456             ;
-; Count8:inst4|inst3~1                                                                                      ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a10~porta_address_reg0 ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a11~porta_address_reg0 ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
-; master_clr                                                                                                ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a3~porta_address_reg0  ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.302             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a0~porta_address_reg0  ; Count8:inst4|inst~_emulated                                                                               ; 2.290             ;
-; Count8:inst4|inst~1                                                                                       ; Count8:inst4|inst~_emulated                                                                               ; 2.290             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a1~porta_address_reg0  ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.277             ;
-; Count8:inst4|inst1~1                                                                                      ; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; 2.277             ;
-; Count8:inst4|inst2~1                                                                                      ; Count8:inst4|inst2~_emulated                                                                              ; 2.244             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a2~porta_address_reg0  ; Count8:inst4|inst2~_emulated                                                                              ; 2.244             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a13~porta_address_reg0 ; reg4bits:inst2|inst1                                                                                      ; 2.146             ;
-; debouncer:inst17|intermediate~_emulated                                                                   ; debouncer:inst17|out_key~_emulated                                                                        ; 1.832             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a8~porta_address_reg0  ; reg4bits:inst10|inst                                                                                      ; 1.275             ;
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ram_block1a9~porta_address_reg0  ; reg4bits:inst10|inst                                                                                      ; 1.275             ;
-; debouncer:inst17|counter[15]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[14]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[13]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[11]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[10]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[9]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[8]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[7]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[6]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[5]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[4]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[3]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[2]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[1]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[0]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
-; debouncer:inst17|counter[12]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.173             ;
+; inst24                                                                                                    ; Count8:inst4|inst3~_emulated                                                                              ; 3.209             ;
+; Count8:inst4|inst3~_emulated                                                                              ; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a2~porta_address_reg0  ; 3.197             ;
+; Count8:inst4|inst2~_emulated                                                                              ; Count8:inst4|inst3~_emulated                                                                              ; 3.067             ;
+; Count8:inst4|inst4                                                                                        ; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a10~porta_address_reg0 ; 2.933             ;
+; Count8:inst4|inst5                                                                                        ; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a10~porta_address_reg0 ; 2.933             ;
+; Count8:inst4|inst6                                                                                        ; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a11~porta_address_reg0 ; 2.933             ;
+; Count8:inst4|inst7                                                                                        ; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a3~porta_address_reg0  ; 2.933             ;
+; Count8:inst4|inst1~_emulated                                                                              ; Count8:inst4|inst3~_emulated                                                                              ; 2.740             ;
+; Count8:inst4|inst~_emulated                                                                               ; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a2~porta_address_reg0  ; 2.718             ;
+; reg4bits:inst2|inst                                                                                       ; reg4bits:inst2|inst1                                                                                      ; 2.550             ;
+; reg4bits:inst10|inst                                                                                      ; reg4bits:inst2|inst1                                                                                      ; 2.548             ;
+; reg4bits:inst2|inst1                                                                                      ; reg4bits:inst2|inst1                                                                                      ; 2.506             ;
+; reg4bits:inst2|inst2                                                                                      ; reg4bits:inst10|inst3                                                                                     ; 2.473             ;
+; reg4bits:inst10|inst1                                                                                     ; reg4bits:inst2|inst2                                                                                      ; 2.473             ;
+; reg4bits:inst10|inst2                                                                                     ; reg4bits:inst10|inst3                                                                                     ; 2.471             ;
+; reg4bits:inst10|inst3                                                                                     ; reg4bits:inst10|inst3                                                                                     ; 2.454             ;
+; reg4bits:inst2|inst3                                                                                      ; reg4bits:inst10|inst3                                                                                     ; 2.447             ;
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a2~porta_address_reg0  ; Count8:inst4|inst3~_emulated                                                                              ; 2.400             ;
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a3~porta_address_reg0  ; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a2~porta_address_reg0  ; 2.391             ;
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a1~porta_address_reg0  ; Count8:inst4|inst3~_emulated                                                                              ; 2.386             ;
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a10~porta_address_reg0 ; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a2~porta_address_reg0  ; 2.373             ;
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a11~porta_address_reg0 ; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a2~porta_address_reg0  ; 2.373             ;
+; master_clr                                                                                                ; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a2~porta_address_reg0  ; 2.373             ;
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a0~porta_address_reg0  ; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a2~porta_address_reg0  ; 2.322             ;
+; debouncer:inst17|out_key~1                                                                                ; debouncer:inst17|out_key~_emulated                                                                        ; 2.248             ;
+; debouncer:inst17|out_key~_emulated                                                                        ; debouncer:inst17|out_key~_emulated                                                                        ; 2.248             ;
+; rst_key                                                                                                   ; debouncer:inst17|out_key~_emulated                                                                        ; 2.248             ;
+; clock_manual                                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 2.248             ;
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a13~porta_address_reg0 ; reg4bits:inst2|inst1                                                                                      ; 1.999             ;
+; Count8:inst4|inst3~1                                                                                      ; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a2~porta_address_reg0  ; 1.631             ;
+; debouncer:inst17|intermediate~_emulated                                                                   ; debouncer:inst17|out_key~_emulated                                                                        ; 1.624             ;
+; Count8:inst4|inst2~1                                                                                      ; Count8:inst4|inst3~_emulated                                                                              ; 1.616             ;
+; Count8:inst4|inst1~1                                                                                      ; Count8:inst4|inst3~_emulated                                                                              ; 1.527             ;
+; Count8:inst4|inst~1                                                                                       ; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a2~porta_address_reg0  ; 1.524             ;
+; debouncer:inst17|counter[15]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[14]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[13]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[11]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[10]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[9]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[8]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[7]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[6]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[5]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[4]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[3]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[2]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[1]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[0]                                                                               ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; debouncer:inst17|counter[12]                                                                              ; debouncer:inst17|out_key~_emulated                                                                        ; 1.088             ;
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a8~porta_address_reg0  ; reg4bits:inst2|inst1                                                                                      ; 0.967             ;
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ram_block1a9~porta_address_reg0  ; reg4bits:inst2|inst1                                                                                      ; 0.967             ;
 +-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-------------------+
-Note: This table only shows the top 51 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 52 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1500,24 +1504,24 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
     Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
-Info (11888): Total time spent on timing analysis during the Fitter is 1.08 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
+Info (11888): Total time spent on timing analysis during the Fitter is 1.12 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
-Info (144001): Generated suppressed messages file C:/Users/13672001/Desktop/Trabalho1/output_files/CPU.fit.smsg
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
+Info (144001): Generated suppressed messages file C:/Users/13695059/Desktop/sd/cpu_sd/output_files/CPU.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6284 megabytes
-    Info: Processing ended: Thu Oct 20 14:39:06 2022
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Peak virtual memory: 6290 megabytes
+    Info: Processing ended: Sat Oct 22 16:06:27 2022
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:35
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/13672001/Desktop/Trabalho1/output_files/CPU.fit.smsg.
+The suppressed messages can be found in C:/Users/13695059/Desktop/sd/cpu_sd/output_files/CPU.fit.smsg.
 
 

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEBA4F23) Path("C:/Users/13672001/Desktop/Trabalho1/output_files/") File("CPU.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEBA4F23) Path("C:/Users/13695059/Desktop/sd/cpu_sd/output_files/") File("CPU.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

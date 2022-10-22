@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU
-Thu Oct 20 14:38:42 2022
+Sat Oct 22 16:06:04 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -17,7 +17,7 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   9. Analysis & Synthesis IP Cores Summary
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Source assignments for rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated
+ 12. Source assignments for rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated
  13. Parameter Settings for User Entity Instance: rom1:inst|altsyncram:altsyncram_component
  14. Parameter Settings for User Entity Instance: debouncer:inst17
  15. Parameter Settings for User Entity Instance: reg4bits:inst2|mux2x1:inst4|LPM_MUX:LPM_MUX_component
@@ -30,10 +30,14 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
  22. Parameter Settings for User Entity Instance: reg4bits:inst10|mux2x1:inst6|LPM_MUX:LPM_MUX_component
  23. Parameter Settings for User Entity Instance: reg4bits:inst10|mux2x1:inst7|LPM_MUX:LPM_MUX_component
  24. Parameter Settings for User Entity Instance: reg4bits:inst10|mux2x1:inst9|LPM_MUX:LPM_MUX_component
- 25. altsyncram Parameter Settings by Entity Instance
- 26. Post-Synthesis Netlist Statistics for Top Partition
- 27. Elapsed Time Per Partition
- 28. Analysis & Synthesis Messages
+ 25. Parameter Settings for User Entity Instance: reg4bits:inst16|mux2x1:inst4|LPM_MUX:LPM_MUX_component
+ 26. Parameter Settings for User Entity Instance: reg4bits:inst16|mux2x1:inst6|LPM_MUX:LPM_MUX_component
+ 27. Parameter Settings for User Entity Instance: reg4bits:inst16|mux2x1:inst7|LPM_MUX:LPM_MUX_component
+ 28. Parameter Settings for User Entity Instance: reg4bits:inst16|mux2x1:inst9|LPM_MUX:LPM_MUX_component
+ 29. altsyncram Parameter Settings by Entity Instance
+ 30. Post-Synthesis Netlist Statistics for Top Partition
+ 31. Elapsed Time Per Partition
+ 32. Analysis & Synthesis Messages
 
 
 
@@ -60,13 +64,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 20 14:38:42 2022       ;
+; Analysis & Synthesis Status     ; Successful - Sat Oct 22 16:06:04 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; CPU                                         ;
 ; Top-level Entity Name           ; CPU                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 34                                          ;
+; Total registers                 ; 35                                          ;
 ; Total pins                      ; 54                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 4,096                                       ;
@@ -190,20 +194,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                 ; Library ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
-; CPU.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13672001/Desktop/Trabalho1/CPU.bdf                                  ;         ;
-; double.bdf                       ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13672001/Desktop/Trabalho1/double.bdf                               ;         ;
-; half.bdf                         ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13672001/Desktop/Trabalho1/half.bdf                                 ;         ;
-; display4bits.bdf                 ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13672001/Desktop/Trabalho1/display4bits.bdf                         ;         ;
-; somaSubParcial.bdf               ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13672001/Desktop/Trabalho1/somaSubParcial.bdf                       ;         ;
-; Count8.bdf                       ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13672001/Desktop/Trabalho1/Count8.bdf                               ;         ;
-; UDC.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13672001/Desktop/Trabalho1/UDC.bdf                                  ;         ;
-; somasub.bdf                      ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13672001/Desktop/Trabalho1/somasub.bdf                              ;         ;
-; mux4x4.vhd                       ; yes             ; User Wizard-Generated File             ; C:/Users/13672001/Desktop/Trabalho1/mux4x4.vhd                               ;         ;
-; ula.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13672001/Desktop/Trabalho1/ula.bdf                                  ;         ;
-; mux2x1.vhd                       ; yes             ; User Wizard-Generated File             ; C:/Users/13672001/Desktop/Trabalho1/mux2x1.vhd                               ;         ;
-; reg4bits.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13672001/Desktop/Trabalho1/reg4bits.bdf                             ;         ;
-; mux2x4.vhd                       ; yes             ; User Wizard-Generated File             ; C:/Users/13672001/Desktop/Trabalho1/mux2x4.vhd                               ;         ;
-; rom1.vhd                         ; yes             ; User Wizard-Generated File             ; C:/Users/13672001/Desktop/Trabalho1/rom1.vhd                                 ;         ;
+; CPU.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13695059/Desktop/sd/cpu_sd/CPU.bdf                                  ;         ;
+; double.bdf                       ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13695059/Desktop/sd/cpu_sd/double.bdf                               ;         ;
+; half.bdf                         ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13695059/Desktop/sd/cpu_sd/half.bdf                                 ;         ;
+; display4bits.bdf                 ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13695059/Desktop/sd/cpu_sd/display4bits.bdf                         ;         ;
+; somaSubParcial.bdf               ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13695059/Desktop/sd/cpu_sd/somaSubParcial.bdf                       ;         ;
+; Count8.bdf                       ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13695059/Desktop/sd/cpu_sd/Count8.bdf                               ;         ;
+; UDC.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13695059/Desktop/sd/cpu_sd/UDC.bdf                                  ;         ;
+; somasub.bdf                      ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13695059/Desktop/sd/cpu_sd/somasub.bdf                              ;         ;
+; mux4x4.vhd                       ; yes             ; User Wizard-Generated File             ; C:/Users/13695059/Desktop/sd/cpu_sd/mux4x4.vhd                               ;         ;
+; ula.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13695059/Desktop/sd/cpu_sd/ula.bdf                                  ;         ;
+; mux2x1.vhd                       ; yes             ; User Wizard-Generated File             ; C:/Users/13695059/Desktop/sd/cpu_sd/mux2x1.vhd                               ;         ;
+; reg4bits.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/13695059/Desktop/sd/cpu_sd/reg4bits.bdf                             ;         ;
+; mux2x4.vhd                       ; yes             ; User Wizard-Generated File             ; C:/Users/13695059/Desktop/sd/cpu_sd/mux2x4.vhd                               ;         ;
+; rom1.vhd                         ; yes             ; User Wizard-Generated File             ; C:/Users/13695059/Desktop/sd/cpu_sd/rom1.vhd                                 ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -213,16 +217,16 @@ https://fpgasoftware.intel.com/eula.
 ; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_m724.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/13672001/Desktop/Trabalho1/db/altsyncram_m724.tdf                   ;         ;
-; memória01.mif                    ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/13672001/Desktop/Trabalho1/memória01.mif                            ;         ;
-; debouncer.v                      ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/13672001/Desktop/Trabalho1/debouncer.v                              ;         ;
+; db/altsyncram_2c24.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/13695059/Desktop/sd/cpu_sd/db/altsyncram_2c24.tdf                   ;         ;
+; memória02.mif                    ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/13695059/Desktop/sd/cpu_sd/memória02.mif                            ;         ;
+; debouncer.v                      ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/13695059/Desktop/sd/cpu_sd/debouncer.v                              ;         ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
 ; muxlut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
 ; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
 ; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
-; db/mux_40e.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/13672001/Desktop/Trabalho1/db/mux_40e.tdf                           ;         ;
-; db/mux_a0e.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/13672001/Desktop/Trabalho1/db/mux_a0e.tdf                           ;         ;
-; db/mux_70e.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/13672001/Desktop/Trabalho1/db/mux_70e.tdf                           ;         ;
+; db/mux_40e.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/13695059/Desktop/sd/cpu_sd/db/mux_40e.tdf                           ;         ;
+; db/mux_a0e.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/13695059/Desktop/sd/cpu_sd/db/mux_a0e.tdf                           ;         ;
+; db/mux_70e.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/13695059/Desktop/sd/cpu_sd/db/mux_70e.tdf                           ;         ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 
 
@@ -233,14 +237,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------------+
 ; Estimate of Logic utilization (ALMs needed) ; 62                         ;
 ;                                             ;                            ;
-; Combinational ALUT usage for logic          ; 113                        ;
-;     -- 7 input functions                    ; 1                          ;
+; Combinational ALUT usage for logic          ; 115                        ;
+;     -- 7 input functions                    ; 0                          ;
 ;     -- 6 input functions                    ; 8                          ;
-;     -- 5 input functions                    ; 6                          ;
-;     -- 4 input functions                    ; 59                         ;
-;     -- <=3 input functions                  ; 39                         ;
+;     -- 5 input functions                    ; 11                         ;
+;     -- 4 input functions                    ; 55                         ;
+;     -- <=3 input functions                  ; 41                         ;
 ;                                             ;                            ;
-; Dedicated logic registers                   ; 34                         ;
+; Dedicated logic registers                   ; 35                         ;
 ;                                             ;                            ;
 ; I/O pins                                    ; 54                         ;
 ; Total MLAB memory bits                      ; 0                          ;
@@ -249,9 +253,9 @@ https://fpgasoftware.intel.com/eula.
 ; Total DSP Blocks                            ; 0                          ;
 ;                                             ;                            ;
 ; Maximum fan-out node                        ; debouncer:inst17|out_key~2 ;
-; Maximum fan-out                             ; 33                         ;
-; Total fan-out                               ; 804                        ;
-; Average fan-out                             ; 2.97                       ;
+; Maximum fan-out                             ; 34                         ;
+; Total fan-out                               ; 809                        ;
+; Average fan-out                             ; 2.95                       ;
 +---------------------------------------------+----------------------------+
 
 
@@ -260,14 +264,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                           ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
-; |CPU                                      ; 113 (2)             ; 34 (0)                    ; 4096              ; 0          ; 54   ; 0            ; |CPU                                                                          ; CPU             ; work         ;
+; |CPU                                      ; 115 (3)             ; 35 (1)                    ; 4096              ; 0          ; 54   ; 0            ; |CPU                                                                          ; CPU             ; work         ;
 ;    |Count8:inst4|                         ; 29 (29)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|Count8:inst4                                                             ; Count8          ; work         ;
 ;    |debouncer:inst17|                     ; 26 (26)             ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |CPU|debouncer:inst17                                                         ; debouncer       ; work         ;
 ;    |display4bits:inst18|                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|display4bits:inst18                                                      ; display4bits    ; work         ;
 ;    |display4bits:inst19|                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|display4bits:inst19                                                      ; display4bits    ; work         ;
 ;    |display4bits:inst6|                   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|display4bits:inst6                                                       ; display4bits    ; work         ;
 ;    |display4bits:inst7|                   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|display4bits:inst7                                                       ; display4bits    ; work         ;
-;    |display4bits:inst8|                   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|display4bits:inst8                                                       ; display4bits    ; work         ;
+;    |display4bits:inst8|                   ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|display4bits:inst8                                                       ; display4bits    ; work         ;
 ;    |display4bits:inst9|                   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|display4bits:inst9                                                       ; display4bits    ; work         ;
 ;    |mux2x4:inst15|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|mux2x4:inst15                                                            ; mux2x4          ; work         ;
 ;       |lpm_mux:LPM_MUX_component|         ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|mux2x4:inst15|lpm_mux:LPM_MUX_component                                  ; lpm_mux         ; work         ;
@@ -276,7 +280,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |reg4bits:inst2|                       ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|reg4bits:inst2                                                           ; reg4bits        ; work         ;
 ;    |rom1:inst|                            ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |CPU|rom1:inst                                                                ; rom1            ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |CPU|rom1:inst|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;          |altsyncram_m724:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |CPU|rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated ; altsyncram_m724 ; work         ;
+;          |altsyncram_2c24:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |CPU|rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated ; altsyncram_2c24 ; work         ;
 ;    |ula:inst22|                           ; 11 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|ula:inst22                                                               ; ula             ; work         ;
 ;       |mux4x4:inst1|                      ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|ula:inst22|mux4x4:inst1                                                  ; mux4x4          ; work         ;
 ;          |lpm_mux:LPM_MUX_component|      ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU|ula:inst22|mux4x4:inst1|lpm_mux:LPM_MUX_component                        ; lpm_mux         ; work         ;
@@ -291,13 +295,13 @@ https://fpgasoftware.intel.com/eula.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                     ;
-+-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------+
-; Name                                                                                ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF           ;
-+-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------+
-; rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 16           ; --           ; --           ; 4096 ; Memória01.mif ;
-+-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                        ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------------+
+; Name                                                                                ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF              ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------------+
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 16           ; --           ; --           ; 4096 ; ../Memória02.mif ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------+
@@ -315,6 +319,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |CPU|reg4bits:inst10|mux2x1:inst7 ; mux2x1.vhd      ;
 ; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |CPU|reg4bits:inst10|mux2x1:inst9 ; mux2x1.vhd      ;
 ; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |CPU|mux2x4:inst15                ; mux2x4.vhd      ;
+; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |CPU|reg4bits:inst16|mux2x1:inst4 ; mux2x1.vhd      ;
+; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |CPU|reg4bits:inst16|mux2x1:inst6 ; mux2x1.vhd      ;
+; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |CPU|reg4bits:inst16|mux2x1:inst7 ; mux2x1.vhd      ;
+; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |CPU|reg4bits:inst16|mux2x1:inst9 ; mux2x1.vhd      ;
 ; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |CPU|ula:inst22|mux4x4:inst1      ; mux4x4.vhd      ;
 +--------+--------------+---------+--------------+--------------+-----------------------------------+-----------------+
 
@@ -324,10 +332,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 34    ;
+; Total registers                              ; 35    ;
 ; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 34    ;
+; Number of registers using Asynchronous Clear ; 35    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
@@ -345,7 +353,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-------------------------------------------------------------------------------------------------+
-; Source assignments for rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated ;
+; Source assignments for rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated ;
 +---------------------------------+--------------------+------+-----------------------------------+
 ; Assignment                      ; Value              ; From ; To                                ;
 +---------------------------------+--------------------+------+-----------------------------------+
@@ -396,7 +404,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                    ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                    ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                    ;
-; INIT_FILE                          ; Memória01.mif        ; Untyped                    ;
+; INIT_FILE                          ; ../Memória02.mif     ; Untyped                    ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                    ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer             ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                    ;
@@ -409,7 +417,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                    ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer             ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                    ;
-; CBXI_PARAMETER                     ; altsyncram_m724      ; Untyped                    ;
+; CBXI_PARAMETER                     ; altsyncram_2c24      ; Untyped                    ;
 +------------------------------------+----------------------+----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -614,6 +622,82 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg4bits:inst16|mux2x1:inst4|LPM_MUX:LPM_MUX_component ;
++------------------------+-----------+----------------------------------------------------------------+
+; Parameter Name         ; Value     ; Type                                                           ;
++------------------------+-----------+----------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY                                                   ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE                                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE                                                 ;
+; LPM_WIDTH              ; 1         ; Signed Integer                                                 ;
+; LPM_SIZE               ; 2         ; Signed Integer                                                 ;
+; LPM_WIDTHS             ; 1         ; Signed Integer                                                 ;
+; LPM_PIPELINE           ; 0         ; Signed Integer                                                 ;
+; CBXI_PARAMETER         ; mux_40e   ; Untyped                                                        ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped                                                        ;
++------------------------+-----------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg4bits:inst16|mux2x1:inst6|LPM_MUX:LPM_MUX_component ;
++------------------------+-----------+----------------------------------------------------------------+
+; Parameter Name         ; Value     ; Type                                                           ;
++------------------------+-----------+----------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY                                                   ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE                                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE                                                 ;
+; LPM_WIDTH              ; 1         ; Signed Integer                                                 ;
+; LPM_SIZE               ; 2         ; Signed Integer                                                 ;
+; LPM_WIDTHS             ; 1         ; Signed Integer                                                 ;
+; LPM_PIPELINE           ; 0         ; Signed Integer                                                 ;
+; CBXI_PARAMETER         ; mux_40e   ; Untyped                                                        ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped                                                        ;
++------------------------+-----------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg4bits:inst16|mux2x1:inst7|LPM_MUX:LPM_MUX_component ;
++------------------------+-----------+----------------------------------------------------------------+
+; Parameter Name         ; Value     ; Type                                                           ;
++------------------------+-----------+----------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY                                                   ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE                                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE                                                 ;
+; LPM_WIDTH              ; 1         ; Signed Integer                                                 ;
+; LPM_SIZE               ; 2         ; Signed Integer                                                 ;
+; LPM_WIDTHS             ; 1         ; Signed Integer                                                 ;
+; LPM_PIPELINE           ; 0         ; Signed Integer                                                 ;
+; CBXI_PARAMETER         ; mux_40e   ; Untyped                                                        ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped                                                        ;
++------------------------+-----------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg4bits:inst16|mux2x1:inst9|LPM_MUX:LPM_MUX_component ;
++------------------------+-----------+----------------------------------------------------------------+
+; Parameter Name         ; Value     ; Type                                                           ;
++------------------------+-----------+----------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY                                                   ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE                                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE                                                 ;
+; LPM_WIDTH              ; 1         ; Signed Integer                                                 ;
+; LPM_SIZE               ; 2         ; Signed Integer                                                 ;
+; LPM_WIDTHS             ; 1         ; Signed Integer                                                 ;
+; LPM_PIPELINE           ; 0         ; Signed Integer                                                 ;
+; CBXI_PARAMETER         ; mux_40e   ; Untyped                                                        ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped                                                        ;
++------------------------+-----------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                      ;
 +-------------------------------------------+-------------------------------------------+
@@ -639,21 +723,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 34                          ;
-;     CLR               ; 10                          ;
+; arriav_ff             ; 35                          ;
+;     CLR               ; 11                          ;
 ;     ENA CLR           ; 8                           ;
 ;     ENA CLR SCLR      ; 16                          ;
-; arriav_lcell_comb     ; 155                         ;
+; arriav_lcell_comb     ; 157                         ;
 ;     arith             ; 16                          ;
 ;         1 data inputs ; 16                          ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 138                         ;
+;     normal            ; 141                         ;
 ;         1 data inputs ; 42                          ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 16                          ;
-;         4 data inputs ; 59                          ;
-;         5 data inputs ; 6                           ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 55                          ;
+;         5 data inputs ; 11                          ;
 ;         6 data inputs ; 8                           ;
 ; boundary_port         ; 54                          ;
 ; stratixv_ram_block    ; 16                          ;
@@ -678,7 +760,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu Oct 20 14:38:32 2022
+    Info: Processing started: Sat Oct 22 16:05:54 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -699,27 +781,27 @@ Info (12021): Found 1 design units, including 1 entities, in source file udc.bdf
 Info (12021): Found 1 design units, including 1 entities, in source file somasub.bdf
     Info (12023): Found entity 1: somasub
 Info (12021): Found 2 design units, including 1 entities, in source file mux4x4.vhd
-    Info (12022): Found design unit 1: mux4x4-SYN File: C:/Users/13672001/Desktop/Trabalho1/mux4x4.vhd Line: 56
-    Info (12023): Found entity 1: mux4x4 File: C:/Users/13672001/Desktop/Trabalho1/mux4x4.vhd Line: 43
+    Info (12022): Found design unit 1: mux4x4-SYN File: C:/Users/13695059/Desktop/sd/cpu_sd/mux4x4.vhd Line: 56
+    Info (12023): Found entity 1: mux4x4 File: C:/Users/13695059/Desktop/sd/cpu_sd/mux4x4.vhd Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file ula.bdf
     Info (12023): Found entity 1: ula
 Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.vhd
-    Info (12022): Found design unit 1: mux2x1-SYN File: C:/Users/13672001/Desktop/Trabalho1/mux2x1.vhd Line: 54
-    Info (12023): Found entity 1: mux2x1 File: C:/Users/13672001/Desktop/Trabalho1/mux2x1.vhd Line: 43
+    Info (12022): Found design unit 1: mux2x1-SYN File: C:/Users/13695059/Desktop/sd/cpu_sd/mux2x1.vhd Line: 54
+    Info (12023): Found entity 1: mux2x1 File: C:/Users/13695059/Desktop/sd/cpu_sd/mux2x1.vhd Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file reg4bits.bdf
     Info (12023): Found entity 1: reg4bits
 Info (12021): Found 2 design units, including 1 entities, in source file mux2x4.vhd
-    Info (12022): Found design unit 1: mux2x4-SYN File: C:/Users/13672001/Desktop/Trabalho1/mux2x4.vhd Line: 54
-    Info (12023): Found entity 1: mux2x4 File: C:/Users/13672001/Desktop/Trabalho1/mux2x4.vhd Line: 43
+    Info (12022): Found design unit 1: mux2x4-SYN File: C:/Users/13695059/Desktop/sd/cpu_sd/mux2x4.vhd Line: 54
+    Info (12023): Found entity 1: mux2x4 File: C:/Users/13695059/Desktop/sd/cpu_sd/mux2x4.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file rom1.vhd
-    Info (12022): Found design unit 1: rom1-SYN File: C:/Users/13672001/Desktop/Trabalho1/rom1.vhd Line: 53
-    Info (12023): Found entity 1: rom1 File: C:/Users/13672001/Desktop/Trabalho1/rom1.vhd Line: 43
+    Info (12022): Found design unit 1: rom1-SYN File: C:/Users/13695059/Desktop/sd/cpu_sd/rom1.vhd Line: 53
+    Info (12023): Found entity 1: rom1 File: C:/Users/13695059/Desktop/sd/cpu_sd/rom1.vhd Line: 43
 Info (12127): Elaborating entity "CPU" for the top level hierarchy
 Info (12128): Elaborating entity "display4bits" for hierarchy "display4bits:inst6"
 Info (12128): Elaborating entity "rom1" for hierarchy "rom1:inst"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "rom1:inst|altsyncram:altsyncram_component" File: C:/Users/13672001/Desktop/Trabalho1/rom1.vhd Line: 60
-Info (12130): Elaborated megafunction instantiation "rom1:inst|altsyncram:altsyncram_component" File: C:/Users/13672001/Desktop/Trabalho1/rom1.vhd Line: 60
-Info (12133): Instantiated megafunction "rom1:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/13672001/Desktop/Trabalho1/rom1.vhd Line: 60
+Info (12128): Elaborating entity "altsyncram" for hierarchy "rom1:inst|altsyncram:altsyncram_component" File: C:/Users/13695059/Desktop/sd/cpu_sd/rom1.vhd Line: 60
+Info (12130): Elaborated megafunction instantiation "rom1:inst|altsyncram:altsyncram_component" File: C:/Users/13695059/Desktop/sd/cpu_sd/rom1.vhd Line: 60
+Info (12133): Instantiated megafunction "rom1:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/13695059/Desktop/sd/cpu_sd/rom1.vhd Line: 60
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -740,7 +822,7 @@ Info (12133): Instantiated megafunction "rom1:inst|altsyncram:altsyncram_compone
     Info (12134): Parameter "indata_aclr_a" = "UNUSED"
     Info (12134): Parameter "indata_aclr_b" = "NONE"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "Memória01.mif"
+    Info (12134): Parameter "init_file" = "../Memória02.mif"
     Info (12134): Parameter "init_file_layout" = "PORT_A"
     Info (12134): Parameter "maximum_depth" = "0"
     Info (12134): Parameter "numwords_a" = "256"
@@ -770,20 +852,20 @@ Info (12133): Instantiated megafunction "rom1:inst|altsyncram:altsyncram_compone
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_m724.tdf
-    Info (12023): Found entity 1: altsyncram_m724 File: C:/Users/13672001/Desktop/Trabalho1/db/altsyncram_m724.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_m724" for hierarchy "rom1:inst|altsyncram:altsyncram_component|altsyncram_m724:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_2c24.tdf
+    Info (12023): Found entity 1: altsyncram_2c24 File: C:/Users/13695059/Desktop/sd/cpu_sd/db/altsyncram_2c24.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_2c24" for hierarchy "rom1:inst|altsyncram:altsyncram_component|altsyncram_2c24:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Warning (12125): Using design file debouncer.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: debouncer File: C:/Users/13672001/Desktop/Trabalho1/debouncer.v Line: 28
+    Info (12023): Found entity 1: debouncer File: C:/Users/13695059/Desktop/sd/cpu_sd/debouncer.v Line: 28
 Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:inst17"
-Warning (10230): Verilog HDL assignment warning at debouncer.v(71): truncated value with size 32 to match size of target (16) File: C:/Users/13672001/Desktop/Trabalho1/debouncer.v Line: 71
+Warning (10230): Verilog HDL assignment warning at debouncer.v(71): truncated value with size 32 to match size of target (16) File: C:/Users/13695059/Desktop/sd/cpu_sd/debouncer.v Line: 71
 Info (12128): Elaborating entity "Count8" for hierarchy "Count8:inst4"
 Info (12128): Elaborating entity "UDC" for hierarchy "UDC:inst11"
 Info (12128): Elaborating entity "reg4bits" for hierarchy "reg4bits:inst2"
 Info (12128): Elaborating entity "mux2x1" for hierarchy "reg4bits:inst2|mux2x1:inst4"
-Info (12128): Elaborating entity "LPM_MUX" for hierarchy "reg4bits:inst2|mux2x1:inst4|LPM_MUX:LPM_MUX_component" File: C:/Users/13672001/Desktop/Trabalho1/mux2x1.vhd Line: 76
-Info (12130): Elaborated megafunction instantiation "reg4bits:inst2|mux2x1:inst4|LPM_MUX:LPM_MUX_component" File: C:/Users/13672001/Desktop/Trabalho1/mux2x1.vhd Line: 76
-Info (12133): Instantiated megafunction "reg4bits:inst2|mux2x1:inst4|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/13672001/Desktop/Trabalho1/mux2x1.vhd Line: 76
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "reg4bits:inst2|mux2x1:inst4|LPM_MUX:LPM_MUX_component" File: C:/Users/13695059/Desktop/sd/cpu_sd/mux2x1.vhd Line: 76
+Info (12130): Elaborated megafunction instantiation "reg4bits:inst2|mux2x1:inst4|LPM_MUX:LPM_MUX_component" File: C:/Users/13695059/Desktop/sd/cpu_sd/mux2x1.vhd Line: 76
+Info (12133): Instantiated megafunction "reg4bits:inst2|mux2x1:inst4|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/13695059/Desktop/sd/cpu_sd/mux2x1.vhd Line: 76
     Info (12134): Parameter "LPM_WIDTH" = "1"
     Info (12134): Parameter "LPM_SIZE" = "2"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
@@ -791,13 +873,13 @@ Info (12133): Instantiated megafunction "reg4bits:inst2|mux2x1:inst4|LPM_MUX:LPM
     Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_40e.tdf
-    Info (12023): Found entity 1: mux_40e File: C:/Users/13672001/Desktop/Trabalho1/db/mux_40e.tdf Line: 23
+    Info (12023): Found entity 1: mux_40e File: C:/Users/13695059/Desktop/sd/cpu_sd/db/mux_40e.tdf Line: 23
 Info (12128): Elaborating entity "mux_40e" for hierarchy "reg4bits:inst2|mux2x1:inst4|LPM_MUX:LPM_MUX_component|mux_40e:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "ula" for hierarchy "ula:inst22"
 Info (12128): Elaborating entity "mux4x4" for hierarchy "ula:inst22|mux4x4:inst1"
-Info (12128): Elaborating entity "LPM_MUX" for hierarchy "ula:inst22|mux4x4:inst1|LPM_MUX:LPM_MUX_component" File: C:/Users/13672001/Desktop/Trabalho1/mux4x4.vhd Line: 90
-Info (12130): Elaborated megafunction instantiation "ula:inst22|mux4x4:inst1|LPM_MUX:LPM_MUX_component" File: C:/Users/13672001/Desktop/Trabalho1/mux4x4.vhd Line: 90
-Info (12133): Instantiated megafunction "ula:inst22|mux4x4:inst1|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/13672001/Desktop/Trabalho1/mux4x4.vhd Line: 90
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "ula:inst22|mux4x4:inst1|LPM_MUX:LPM_MUX_component" File: C:/Users/13695059/Desktop/sd/cpu_sd/mux4x4.vhd Line: 90
+Info (12130): Elaborated megafunction instantiation "ula:inst22|mux4x4:inst1|LPM_MUX:LPM_MUX_component" File: C:/Users/13695059/Desktop/sd/cpu_sd/mux4x4.vhd Line: 90
+Info (12133): Instantiated megafunction "ula:inst22|mux4x4:inst1|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/13695059/Desktop/sd/cpu_sd/mux4x4.vhd Line: 90
     Info (12134): Parameter "LPM_WIDTH" = "4"
     Info (12134): Parameter "LPM_SIZE" = "4"
     Info (12134): Parameter "LPM_WIDTHS" = "2"
@@ -805,16 +887,16 @@ Info (12133): Instantiated megafunction "ula:inst22|mux4x4:inst1|LPM_MUX:LPM_MUX
     Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_a0e.tdf
-    Info (12023): Found entity 1: mux_a0e File: C:/Users/13672001/Desktop/Trabalho1/db/mux_a0e.tdf Line: 23
+    Info (12023): Found entity 1: mux_a0e File: C:/Users/13695059/Desktop/sd/cpu_sd/db/mux_a0e.tdf Line: 23
 Info (12128): Elaborating entity "mux_a0e" for hierarchy "ula:inst22|mux4x4:inst1|LPM_MUX:LPM_MUX_component|mux_a0e:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "somasub" for hierarchy "ula:inst22|somasub:inst5"
 Info (12128): Elaborating entity "somasubParcial" for hierarchy "ula:inst22|somasub:inst5|somasubParcial:inst8"
 Info (12128): Elaborating entity "double" for hierarchy "ula:inst22|double:inst4"
 Info (12128): Elaborating entity "half" for hierarchy "ula:inst22|half:inst2"
 Info (12128): Elaborating entity "mux2x4" for hierarchy "mux2x4:inst15"
-Info (12128): Elaborating entity "LPM_MUX" for hierarchy "mux2x4:inst15|LPM_MUX:LPM_MUX_component" File: C:/Users/13672001/Desktop/Trabalho1/mux2x4.vhd Line: 80
-Info (12130): Elaborated megafunction instantiation "mux2x4:inst15|LPM_MUX:LPM_MUX_component" File: C:/Users/13672001/Desktop/Trabalho1/mux2x4.vhd Line: 80
-Info (12133): Instantiated megafunction "mux2x4:inst15|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/13672001/Desktop/Trabalho1/mux2x4.vhd Line: 80
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "mux2x4:inst15|LPM_MUX:LPM_MUX_component" File: C:/Users/13695059/Desktop/sd/cpu_sd/mux2x4.vhd Line: 80
+Info (12130): Elaborated megafunction instantiation "mux2x4:inst15|LPM_MUX:LPM_MUX_component" File: C:/Users/13695059/Desktop/sd/cpu_sd/mux2x4.vhd Line: 80
+Info (12133): Instantiated megafunction "mux2x4:inst15|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/13695059/Desktop/sd/cpu_sd/mux2x4.vhd Line: 80
     Info (12134): Parameter "LPM_WIDTH" = "4"
     Info (12134): Parameter "LPM_SIZE" = "2"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
@@ -822,27 +904,27 @@ Info (12133): Instantiated megafunction "mux2x4:inst15|LPM_MUX:LPM_MUX_component
     Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_70e.tdf
-    Info (12023): Found entity 1: mux_70e File: C:/Users/13672001/Desktop/Trabalho1/db/mux_70e.tdf Line: 23
+    Info (12023): Found entity 1: mux_70e File: C:/Users/13695059/Desktop/sd/cpu_sd/db/mux_70e.tdf Line: 23
 Info (12128): Elaborating entity "mux_70e" for hierarchy "mux2x4:inst15|LPM_MUX:LPM_MUX_component|mux_70e:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "Count8:inst4|inst3" is converted into an equivalent circuit using register "Count8:inst4|inst3~_emulated" and latch "Count8:inst4|inst3~1"
     Warning (13310): Register "Count8:inst4|inst2" is converted into an equivalent circuit using register "Count8:inst4|inst2~_emulated" and latch "Count8:inst4|inst2~1"
     Warning (13310): Register "Count8:inst4|inst1" is converted into an equivalent circuit using register "Count8:inst4|inst1~_emulated" and latch "Count8:inst4|inst1~1"
     Warning (13310): Register "Count8:inst4|inst" is converted into an equivalent circuit using register "Count8:inst4|inst~_emulated" and latch "Count8:inst4|inst~1"
-    Warning (13310): Register "debouncer:inst17|out_key" is converted into an equivalent circuit using register "debouncer:inst17|out_key~_emulated" and latch "debouncer:inst17|out_key~1" File: C:/Users/13672001/Desktop/Trabalho1/debouncer.v Line: 42
-    Warning (13310): Register "debouncer:inst17|intermediate" is converted into an equivalent circuit using register "debouncer:inst17|intermediate~_emulated" and latch "debouncer:inst17|out_key~1" File: C:/Users/13672001/Desktop/Trabalho1/debouncer.v Line: 50
+    Warning (13310): Register "debouncer:inst17|out_key" is converted into an equivalent circuit using register "debouncer:inst17|out_key~_emulated" and latch "debouncer:inst17|out_key~1" File: C:/Users/13695059/Desktop/sd/cpu_sd/debouncer.v Line: 42
+    Warning (13310): Register "debouncer:inst17|intermediate" is converted into an equivalent circuit using register "debouncer:inst17|intermediate~_emulated" and latch "debouncer:inst17|out_key~1" File: C:/Users/13695059/Desktop/sd/cpu_sd/debouncer.v Line: 50
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 191 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 193 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 50 output pins
-    Info (21061): Implemented 121 logic cells
+    Info (21061): Implemented 123 logic cells
     Info (21064): Implemented 16 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4895 megabytes
-    Info: Processing ended: Thu Oct 20 14:38:42 2022
+    Info: Peak virtual memory: 4884 megabytes
+    Info: Processing ended: Sat Oct 22 16:06:04 2022
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Total CPU time (on all processors): 00:00:18
 
 
