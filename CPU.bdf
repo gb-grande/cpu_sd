@@ -192,7 +192,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 1080 1264 1275 1280)
+	(rect 1408 1136 1603 1152)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "REG2_Display[6..0]" (rect 90 0 189 12)(font "Arial" ))
 	(pt 0 8)
@@ -205,7 +205,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1275 1280 1339 1304))
+	(annotation_block (location)(rect 1603 1152 1667 1176))
 )
 (symbol
 	(rect 896 728 944 760)
@@ -688,7 +688,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 944 1240 1080 1336)
+	(rect 1272 1112 1408 1208)
 	(text "display4bits" (rect 5 0 79 19)(font "Intel Clear" (font_size 8)))
 	(text "inst19" (rect 8 75 36 92)(font "Intel Clear" ))
 	(port
@@ -884,7 +884,7 @@ https://fpgasoftware.intel.com/eula.
 	(rotate90)
 )
 (symbol
-	(rect 376 472 408 488)
+	(rect 376 496 408 512)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
 	(text "inst35" (rect 3 5 31 22)(font "Intel Clear" )(invisible))
 	(port
@@ -961,21 +961,12 @@ https://fpgasoftware.intel.com/eula.
 	(pt 512 680)
 )
 (connector
-	(pt 392 488)
-	(pt 392 512)
-)
-(connector
 	(pt 392 592)
 	(pt 392 608)
 )
 (connector
 	(pt 424 536)
 	(pt 512 536)
-)
-(connector
-	(text "master_clr" (rect 368 669 385 719)(font "Intel Clear" )(vertical))
-	(pt 384 672)
-	(pt 384 712)
 )
 (connector
 	(pt 568 728)
@@ -1282,12 +1273,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 1024 1128)
 )
 (connector
-	(text "REG2[3..0]" (rect 888 1256 937 1273)(font "Intel Clear" ))
-	(pt 880 1272)
-	(pt 944 1272)
-	(bus)
-)
-(connector
 	(pt 560 848)
 	(pt 616 848)
 )
@@ -1295,6 +1280,17 @@ https://fpgasoftware.intel.com/eula.
 	(text "clk" (rect 816 832 830 849)(font "Intel Clear" ))
 	(pt 808 848)
 	(pt 824 848)
+)
+(connector
+	(text "master_clr" (rect 368 661 385 711)(font "Intel Clear" )(vertical))
+	(pt 384 672)
+	(pt 384 704)
+)
+(connector
+	(text "REG2[3..0]" (rect 1216 1128 1265 1145)(font "Intel Clear" ))
+	(pt 1208 1144)
+	(pt 1272 1144)
+	(bus)
 )
 (junction (pt 512 680))
 (junction (pt 624 1016))
